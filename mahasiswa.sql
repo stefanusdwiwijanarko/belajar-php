@@ -17,3 +17,9 @@ CREATE TABLE mahasiswa (
     alamat VARCHAR(255) NOT NULL,
     FOREIGN KEY (id_jurusan) REFERENCES jurusan(id)
 );
+
+-- insert jurusan
+insert into jurusan (kode, nama) values ("PTIF", "Pendidikan Teknik Informatika");
+
+--insert mahasiswa
+insert into mahasiswa (id_jurusan, nim, nama, jenis_kelamin, tempat_lahir, tanggal_lahir, alamat) values (1, "20220001", "Fulan", "laki-laki", "Malang", "2000-12-25", "Jl. Soekarno Hatta 9");
